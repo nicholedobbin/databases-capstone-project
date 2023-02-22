@@ -1,0 +1,161 @@
+---- MySQL Database Setup Example ----
+This is meant as a guideline only for creating the database for this project.
+
+(1) Create and navigate to 'PoisePMS' databse and show tables (should be none yet): 
+	create database if not exists PoisePMS;
+	show databases;
+	use PoisePMS;
+	show tables;
+
+(2) Create and show the 5 tables in PoisePMS database: 
+	--- Architects Table ---
+	create table architects (
+	architect_id int not null auto_increment, 
+	architect_name varchar(50), 
+	architect_phone int, 
+	architect_email varchar(50), 
+	architect_address varchar(50),
+	primary key (architect_id)
+	);
+
+	describe architects;
+
+	--- Contractors Table ---
+	create table contractors (
+	contractor_id int not null auto_increment, 
+	contractor_name varchar(50), 
+	contractor_phone int, 
+	contractor_email varchar(50), 
+	contractor_address varchar(50), 
+	primary key (contractor_id)
+	);
+
+	describe contractors;
+
+	--- Customers Table ---
+	create table customers (
+	customer_id int not null auto_increment, 
+	customer_name varchar(50), 
+	customer_phone int, 
+	customer_email varchar(50), 
+	customer_address varchar(50), 
+	primary key (customer_id)
+	);
+
+	describe customers;
+
+	--- Managers Table ---
+	proj_man_id int not null auto_increment, 
+	proj_man_name varchar(50), 
+	proj_man_phone int, 
+	proj_man_email varchar(50), 
+	proj_man_address varchar(50), 
+	primary key (proj_man_id)
+	);
+
+	describe managers;
+
+	--- Projects Table ---
+	create table projects (
+	proj_number int not null auto_increment, 
+	proj_name varchar(50), 
+	building_type varchar(50), 
+	proj_address varchar(50), 
+	erf_number int, 
+	total_proj_fee decimal(18,2), 
+	total_paid decimal(18,2), 
+	proj_deadline date, 
+	architect_id int not null, 
+	contractor_id int not null, 
+	customer_id int not null, 
+	proj_man_id int not null, 
+	proj_finalized varchar(15), 
+	date_completed date,
+	primary key (proj_number),
+	foreign key (architect_id) references architects(architect_id) on delete cascade,
+	foreign key (contractor_id) references contractors(contractor_id) on delete cascade,
+	foreign key (customer_id) references customers(customer_id) on delete cascade,
+	foreign key (proj_man_id) references managers(proj_man_id) on delete cascade
+	);
+
+	describe projects;
+
+
+(3) Add data to the 5 tables and check data is added:
+	--- Architects Table --- 
+	insert into architects 
+	(architect_name, architect_phone, architect_email, architect_address) 
+	values
+	('Annie Apple', 01232323, 'adam@architect.com', '12 Pine St, Cape Town'),
+	('Betty Bishop', 01343434, 'betty@architect.com', '31 Teak St, Cape Town'),
+	('Cian Colman', 01454545, 'cian@architect.com', '31 Maple Ave, Cape Town'),
+	('Dalia Dobbs', 01565656, 'dalia@architect.com', '5 Ash Ln, Cape Town');
+
+	select * from architects;
+
+	--- Contractors Table ---
+	insert into contractors 
+	(contractor_name, contractor_phone, contractor_email, contractor_address) 
+	values
+	('Esme Elliot', 01676767, 'esme@contractor.com', '2 Oak St, Cape Town'),
+	('Fran Fillion', 01787878, 'fran@contractor.com', '15 Plum Rd, Cape Town'),
+	('Greg Gotman', 01898989, 'greg@contractor.com', '12 Long St, Cape Town'),
+	('Hieu Henries', 01909090, 'hieu@contractor.com', '24 Kloof St, Cape Town');
+
+	select * from contractors;
+
+	--- Customers Table ---
+	insert into customers 
+	(customer_name, customer_phone, customer_email, customer_address) 
+	values
+	('Ingrid Isaacs', 013232323, 'ingrid@customer.com', '11 Rose St, Cape Town'),
+	('Jackie Jewel', 013343434, 'jackie@customer.com', '18 Sturgeon St, Cape Town'),
+	('Kenneth King', 013454545, 'kenneth@customer.com', '72 Violet Ln, Cape Town'),
+	('Liam Lovelace', 013565656, 'liam@customer.com', '45 Eagle Rd, Cape Town');
+
+	select * from customers;
+
+	--- Managers Table ---
+	(proj_man_name, proj_man_phone, proj_man_email, proj_man_address) 
+	values
+	('Mike Mayer', 014998997, 'mike@cmanager.com', '4 Cactus Rd, Cape Town'),
+	('Nick Naples', 014776655, 'nick@manager.com', '32 Mulberry Ave, Cape Town'),
+	("Orla O'Hara", 014559933, 'orla@manager.com', '71 Olive St, Cape Town'),
+	('Piper Peters', 014332299, 'piper@manager.com', '14 Fisher Ln, Cape Town');
+
+	select * from managers;
+
+	--- Projects Table ---
+	insert into projects 
+	(proj_name, building_type, proj_address, erf_number, total_proj_fee, total_paid, proj_deadline, architect_id, contractor_id, customer_id, proj_man_id, proj_finalized, date_completed) 
+	values 
+	('Estella', 'Apartment Block', '1 Main Rd, Cape Town', 1234, 124555.52, 100000.52, '2022-10-31', 1, 1, 2, 3, 'Finalized', current_date), 
+	('Canal Walk', 'Shopping Centre', '1 Ratanga Rd, Cape Town', 2345, 257892.99, 127000.99, '2023-01-31', 1, 2, 3, 3, 'Not Finalized', null),
+	('House Davies', 'House', '22 Fifth St, Cape Town', 6789, 122000.00, 12500.00, '2022-09-01', 2, 1, 2, 3, 'Not Finalized', null),
+	('Villa Nova', 'Gated Community', '5 Third St, Cape Town', 9012, 120550.99, 100550.99, '2022-08-25', 4, 4, 4, 4, 'Not Finalized', null);
+
+	select proj_name, building_type, proj_address, erf_number from projects;
+
+	select total_proj_fee, total_paid, proj_deadline from projects;
+
+	select architect_id, contractor_id, customer_id, proj_man_id, proj_finalized, date_completed from projects;
+
+	SELECT projects.proj_number, projects.building_type, projects.customer_id, customers.customer_name, projects.architect_id, architects.architect_name, projects.contractor_id, contractors.contractor_name, projects.proj_man_id, managers.proj_man_name 
+	FROM projects 
+	INNER JOIN customers ON projects.customer_id = customers.customer_id
+	INNER JOIN architects ON projects.architect_id = architects.architect_id
+	INNER JOIN contractors ON projects.contractor_id = contractors.contractor_id
+	INNER JOIN managers ON projects.proj_man_id = managers.proj_man_id;
+
+
+
+
+
+
+
+
+
+
+
+
+

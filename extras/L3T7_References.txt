@@ -1,0 +1,100 @@
+============================================= L3T8 References ======================================================
+
+baeldung. (2022). Introduction to Javadoc.
+Retrieved from: https://www.baeldung.com/javadoc
+
+baeldung. (2022). Javadoc: @see and @link.
+Retrieved from: https://www.baeldung.com/javadoc-see-vs-link
+
+baeldung. (2022). Javadoc: @version and @since.
+Retrieved from: https://www.baeldung.com/javadoc-version-since
+
+Centizen Nationwide. (2019). MYSQL Naming Conventions.
+Retrieved from: https://medium.com/@centizennationwide/mysql-naming-conventions-e3a6f6219efe#:~:text=General%20Rules%20%E2%80%94%20Naming%20Conventions,contains%20only%20Alpha%20English%20alphabets.
+
+GitHub Docs. (n.d.). About READMEs.
+Retrieved from: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes
+
+Google. (n.d.). Google Java Style Guide.
+Retrieved from: https://google.github.io/styleguide/javaguide.html#s5.2.2-class-names
+
+idratherbewriting.com. (n.d.). Java: Javadoc tags.
+Retrieved from: https://idratherbewriting.com/java-javadoc-tags/#:~:text=It's%20a%20best%20practice%20to,else%20is%20similar%20to%20methods.
+
+idratherbewriting.com. (2018). Javadoc tags.
+Retrieved from: https://idratherbewriting.com/learnapidoc/nativelibraryapis_javadoc_tags.html
+
+Ilenia Magoni. (2022). SQL Inner Join – How to Join 3 Tables in SQL and MySQL.
+Retrieved from: https://www.freecodecamp.org/news/sql-inner-join-how-to-join-3-tables-in-sql-and-mysql/
+
+IntelliJ IDEA. (2022). Javadocs.
+Retrieved from: https://www.jetbrains.com/help/idea/working-with-code-documentation.html
+
+javaTpoint. (n.d.). MySQL ON DELETE CASCADE.
+Retrieved from: https://www.javatpoint.com/mysql-on-delete-cascade#:~:text=ON%20DELETE%20CASCADE%20clause%20in,related%20to%20the%20foreign%20key.
+
+MySQL. (n.d.). 7.6 Using Foreign Keys.
+Retrieved from: https://dev.mysql.com/doc/mysql-tutorial-excerpt/8.0/en/example-foreign-keys.html
+
+MySQL. (n.d.). 11.2.2 The DATE, DATETIME, and TIMESTAMP Types.
+Retrieved from: https://dev.mysql.com/doc/refman/8.0/en/datetime.html#:~:text=MySQL%20retrieves%20and%20displays%20DATE,%3Amm%3Ass%20'%20format.
+
+MySQLTUTORIAL. (n.d.). How To Find Duplicate Values in MySQL.
+Retrieved from: https://www.mysqltutorial.org/mysql-find-duplicate-values/
+
+MySQLTUTORIAL. (n.d.). MySQL ON DELETE CASCADE.
+Retrieved from: https://www.mysqltutorial.org/mysql-on-delete-cascade/
+
+Oracle. (n.d.). How to Write Doc Comments for the Javadoc Tool.
+Retrieved from: https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html#styleguide
+
+Oracle. (n.d.). Retrieving and Modifying Values from Result Sets.
+Retrieved from: https://docs.oracle.com/javase/tutorial/jdbc/basics/retrieving.html
+
+Oracle. (n.d.). javadoc - The Java API Documentation Generator.
+Retrieved from: https://docs.oracle.com/javase/7/docs/technotes/tools/windows/javadoc.html#throws
+
+StackExchange. (2013). select rows where column contains same data in more than one record.
+Retrieved from: https://dba.stackexchange.com/questions/54187/select-rows-where-column-contains-same-data-in-more-than-one-record
+
+stackoverflow. (2018). Connection Java - MySQL : Public Key Retrieval is not allowed.
+Retrieved from: https://stackoverflow.com/questions/50379839/connection-java-mysql-public-key-retrieval-is-not-allowed
+
+tutorialspoint. (n.d.). Java - Documentation Comments.
+Retrieved from: https://www.tutorialspoint.com/java/java_documentation.htm
+
+w3schools. (n.d.). MySQL DATE() Function
+Retrieved from: https://www.w3schools.com/sql/func_mysql_date.asp
+
+w3schools. (n.d.). SQL AUTO INCREMENT Field.
+Retrieved from: https://www.w3schools.com/sql/sql_autoincrement.asp
+
+w3schools. (n.d.). SQL Data Types for MySQL, SQL Server, and MS Access.
+Retrieved from: https://www.w3schools.com/sql/sql_datatypes.asp
+
+w3schools. (n.d.). SQL FOREIGN KEY Constraint.
+Retrieved from: https://www.w3schools.com/sql/sql_foreignkey.asp
+
+w3schools. (n.d.). SQL INNER JOIN Keyword.
+Retrieved from: https://www.w3schools.com/sql/sql_join_inner.asp
+
+w3schools. (n.d.). SQL UNIQUE Constraint.
+Retrieved from: https://www.w3schools.com/sql/sql_unique.asp
+
+w3schools. (n.d.). SQL Working With Dates.
+Retrieved from: https://www.w3schools.com/sql/sql_dates.asp
+
+@abhisri459. (2021) How to Update Multiple Records Using One Query in SQL Server?.
+Retrieved from: https://www.geeksforgeeks.org/how-to-update-multiple-records-using-one-query-in-sql-server/
+
+@jana_sayantan. (2020). UUID() function in MySQL.
+Retrieved from: https://www.geeksforgeeks.org/uuid-function-in-mysql/
+
+@lokeshpotta20. (2021). MySQL | Deleting rows when there is a foreign key.
+Retrieved from: https://www.geeksforgeeks.org/mysql-deleting-rows-when-there-is-a-foreign-key/
+
+
+
+
+
+
